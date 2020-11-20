@@ -44,10 +44,10 @@ ReadMe.txt의 내용은 아래와 같이 작성했다..<br>
 <br>
 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 폴더별 설명 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓<br>
 ● Input_this_into_Scene : 위 1과 같습니다.<br>
-● Items :     <br>
-      >> Image : 아이템 프리팹 제작에 사용된 사진 파일들을 보관<br>
-      >> Prefabs : Items 폴더내의 리소스들로 만든 프리팹들 보관<br>
-      >> Materials : 아이템 프리팹 제작에 사용된 Material 보관 <br>
+* Items :     <br>
+** Image : 아이템 프리팹 제작에 사용된 사진 파일들을 보관<br>
+** Prefabs : Items 폴더내의 리소스들로 만든 프리팹들 보관<br>
+** Materials : 아이템 프리팹 제작에 사용된 Material 보관 <br>
 ● Scripts : Item 및 Inventory 제작에 사용된 코드들 보관.<br>
 ● Slot : Inventory 에 추가될 Slot 프리팹 보관<br>
 <br>
