@@ -31,9 +31,9 @@ Assets 폴더 안의 Resources 안에 Inventory 폴더 생성 및 관련 파일 
 ReadMe.txt의 내용은 아래와 같이 작성했다..<br>
 <br>
 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 필독!! 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓<br>
-▶ Input_this_into_Scene 안에 있는 프리팹들을 작동시킬 Scene안에 꼭!! 넣어주세요.<br>
-▶ 이 Inventory 폴더는 Resources 폴더 안에 들어있어야합니다.<br>
-▶ Player에게 Player태그를 꼭 넣어주세요. 그렇지 않으면 아이템이 먹어지지 않습니다.<br>
+● Input_this_into_Scene 안에 있는 프리팹들을 작동시킬 Scene안에 꼭!! 넣어주세요.<br>
+● 이 Inventory 폴더는 Resources 폴더 안에 들어있어야합니다.<br>
+● Player에게 Player태그를 꼭 넣어주세요. 그렇지 않으면 아이템이 먹어지지 않습니다.<br>
 <br>
      위 조건이 만족해야 정상 동작합니다.<br>
      (코드 내부의 경로를 그렇게 지정해놓았습니다.)<br>
@@ -43,40 +43,40 @@ ReadMe.txt의 내용은 아래와 같이 작성했다..<br>
     코드에서 직접 조정해주세요.  <br>
 <br>
 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 폴더별 설명 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓<br>
-▶ Input_this_into_Scene : 위 1과 같습니다.<br>
-▶ Items :     <br>
-      ▶ Image : 아이템 프리팹 제작에 사용된 사진 파일들을 보관<br>
-      ▶ Prefabs : Items 폴더내의 리소스들로 만든 프리팹들 보관<br>
-      ▶ Materials : 아이템 프리팹 제작에 사용된 Material 보관 <br>
-▶ Scripts : Item 및 Inventory 제작에 사용된 코드들 보관.<br>
-▶ Slot : Inventory 에 추가될 Slot 프리팹 보관<br>
+● Input_this_into_Scene : 위 1과 같습니다.<br>
+● Items :     <br>
+      ● Image : 아이템 프리팹 제작에 사용된 사진 파일들을 보관<br>
+      ● Prefabs : Items 폴더내의 리소스들로 만든 프리팹들 보관<br>
+      ● Materials : 아이템 프리팹 제작에 사용된 Material 보관 <br>
+● Scripts : Item 및 Inventory 제작에 사용된 코드들 보관.<br>
+● Slot : Inventory 에 추가될 Slot 프리팹 보관<br>
 <br>
 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 스크립트별 설명 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓<br>
 <br>
-▶ GameMessage.cs  :  아이템 획득시 문구를 띄웁니다. <br>
- ▷ 인벤토리ONOFF에 따라 위치가 달라집니다.<br>
- ▷ Item.cs로부터 msg를 전달받아 화면에 띄웁니다.<br>
- ▷ 코드 변경시 : 띄울 위치 조정 및 시간조정이 가능합니다.<br>
+● GameMessage.cs  :  아이템 획득시 문구를 띄웁니다. <br>
+ ○ 인벤토리ONOFF에 따라 위치가 달라집니다.<br>
+ ○ Item.cs로부터 msg를 전달받아 화면에 띄웁니다.<br>
+ ○ 코드 변경시 : 띄울 위치 조정 및 시간조정이 가능합니다.<br>
 <br>
-▶ InventoryManager.cs  :  인벤토리 내에 슬롯을 생성합니다.<br>
- ▷ Scene이 시작되면 슬롯을 생성하고 ItemDatabase.cs를 초기화합니다.<br>
- ▷ 코드 변경시 : 인벤토리 내 슬롯 생성 위치 조정 가능 및 슬롯 생성 개수 지정 가능<br>
+● InventoryManager.cs  :  인벤토리 내에 슬롯을 생성합니다.<br>
+ ○ Scene이 시작되면 슬롯을 생성하고 ItemDatabase.cs를 초기화합니다.<br>
+ ○ 코드 변경시 : 인벤토리 내 슬롯 생성 위치 조정 가능 및 슬롯 생성 개수 지정 가능<br>
 <br>
-▶ InventoryOnOFF.cs  :  인벤토리 OnOff를 가능하게 합니다. <br>
- ▷ 코드 변경시 : 인벤토리 OnOff 를 실행하는 키를 변경가능합니다.<br>
+● InventoryOnOFF.cs  :  인벤토리 OnOff를 가능하게 합니다. <br>
+ ○ 코드 변경시 : 인벤토리 OnOff 를 실행하는 키를 변경가능합니다.<br>
 <br>
-▶ Item.cs  :  아이템 고유 이름을 지정하고 인벤토리 내의 슬롯을 채웁니다.<br>
- ▷ 아이템 습득시 띄울 문구를 GameMessage.cs로 전달합니다. <br>
- ▷ 즉, 아이템 습득시 띄워지는 메시지를 조정 가능합니다.<br>
- ▷ 코드 변경시 : 아이템을 채우는 메서드의 알고리즘 조정과 아이템 태그별 이름 설정이 가능합니다.<br>
+● Item.cs  :  아이템 고유 이름을 지정하고 인벤토리 내의 슬롯을 채웁니다.<br>
+ ○ 아이템 습득시 띄울 문구를 GameMessage.cs로 전달합니다. <br>
+ ○ 즉, 아이템 습득시 띄워지는 메시지를 조정 가능합니다.<br>
+ ○ 코드 변경시 : 아이템을 채우는 메서드의 알고리즘 조정과 아이템 태그별 이름 설정이 가능합니다.<br>
 <br>
-▶ ItemDatabase.cs  :  아이템 별 Slot.cs 의 Contained에 따라 슬롯의 이미지를 변경합니다.<br>
- ▷ 코드 변경시 : Contained의 번호에 따른 아이템 슬롯에 띄울 이미지 조정이 가능합니다.<br>
+● ItemDatabase.cs  :  아이템 별 Slot.cs 의 Contained에 따라 슬롯의 이미지를 변경합니다.<br>
+ ○ 코드 변경시 : Contained의 번호에 따른 아이템 슬롯에 띄울 이미지 조정이 가능합니다.<br>
 <br>
-▶ ItemSpawner.cs  :   플레이어 근처에 아이템을 무작위로 스폰합니다.<br>
- ▷ 코드 변경시 : 스폰 개수, 타입, 위치 조정이 가능합니다.<br>
-<br>
-▶ Slot.cs  :  아이템의 고유 정보를 담을 수 있습니다.<br>
- ▷ 코드 변경시 : 담을 고유 정보를 변경, 추가할 수 있습니다.<br>
+● ItemSpawner.cs  :   플레이어 근처에 아이템을 무작위로 스폰합니다.<br>
+ ○ 코드 변경시 : 스폰 개수, 타입, 위치 조정이 가능합니다.<br>
+<br> 
+● Slot.cs  :  아이템의 고유 정보를 담을 수 있습니다.<br>
+ ○ 코드 변경시 : 담을 고유 정보를 변경, 추가할 수 있습니다.<br>
 <br>
 <br>
