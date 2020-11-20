@@ -18,8 +18,9 @@ public class Item : MonoBehaviour
         slots = IM.slots;    // Inventory 하위의 InventoryManager 코드 안의 (public된 변수) slots를 가져옴.
 
     }
-    private void OnTriggerEnter(Collider other) // other 은 플레이어
+    private void OnTriggerEnter(Collider other) 
     {
+        // 태그 별 게임 메시지에 출력할 이름 지정해주기
         string name;
         if (gameObject.tag == "tree")
             name = "나뭇잎";
@@ -27,13 +28,20 @@ public class Item : MonoBehaviour
             name = "물";
         else if (gameObject.tag == "jabdongsani")
             name = "종류별 잡동사니";
-        else
+        else if (gameObject.tag == "tresh")
             name = "쓰레기";
+        else  // 지정된 이름이 없다면 tag 그대로 지정
+            name = gameObject.tag;
+
+
+
 
         if (other.tag == "Player")     // player와 닿았을때
         {
             int BreakorLeave = 0;      // 파괴여부 결정 변수.  1이면 파괴, 0이면 존재
-            if (gameObject.tag == "tree")           // 현재 Item의 태그가 n이면
+
+            // 플레이어가 습득할 tag 지정    
+            if (gameObject.tag == "tree")           
                 BreakorLeave = Fillslots(0, 1); 
             else if (gameObject.tag == "water")
                 BreakorLeave = Fillslots(0, 2);
@@ -56,18 +64,21 @@ public class Item : MonoBehaviour
                 
                 gameObject.SetActive(false);
                 GM.Popup_Message(name + "(을)를 얻었습니다.");
-                //GM.StartCoroutine("Popup_Message", gameObject.tag + "를 얻었습니다.");        // coroutine 테스트 했었음
             }
             else
             {
                 GM.Popup_Message("인벤토리가 꽉 차 " + name + "(을)를 얻을수 없습니다");
 
-                //GM.StartCoroutine("Popup_Message","인벤토리가 꽉 차 " + gameObject.tag + "를 얻을수 없습니다");   // coroutine 테스트 했었음
             }
 
         }
-    }   
-    int Fillslots(int num, int will_contain)      //  채울 슬롯의 번호, 채울 물건의 고유 번호 ex) 1. 나무  2. 물  3. 쓰레기 ... Etc
+    }
+
+
+    //  슬롯 채우는 함수 (재귀함수로 만듦) 
+
+    //  Fillslots(채울 슬롯의 번호, 채울 물건의 고유 번호){}       ex) 1. 나무  2. 물  3. 쓰레기 ... Etc
+    int Fillslots(int num, int will_contain)      
     {
         Slot slot = slots[num].transform.GetComponent<Slot>();
         if (slot.Contained == will_contain) // 담을 것과 내용물이 같다면

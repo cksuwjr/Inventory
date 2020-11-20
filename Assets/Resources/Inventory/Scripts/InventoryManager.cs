@@ -18,7 +18,7 @@ public class InventoryManager : MonoBehaviour
     {
         Amount = 8;                                               // Slot 생성 용량 (개)
         Inventory = GameObject.Find("Inventory").transform.Find("SlotPlace").gameObject;  // Inventory 하위의 SlotPlace 가져오기(슬롯이 생성될)
-        Slot = Resources.Load("Slot") as GameObject;              // Slot 프리팹 가져오기(코드 이용)
+        Slot = Resources.Load<GameObject>("Inventory/Slot/Slot") as GameObject;              // Slot 프리팹 가져오기(코드 이용)
 
         for (int i = 0; i < Amount; i++)
         {
