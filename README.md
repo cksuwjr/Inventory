@@ -1,5 +1,5 @@
-# Inventory
-〓> 간단한 인벤토리 구현.<br>
+# Inventory 간단한 인벤토리 구현
+<br>
 <br>
 - Unity 2019.4.13f1 에서 구현됨.<br>
 <br>
