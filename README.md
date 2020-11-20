@@ -10,7 +10,7 @@
 <img width="270" src="https://user-images.githubusercontent.com/63836325/99794994-6670d680-2b6e-11eb-8016-8ea25f0724f3.PNG">
 <img width="270" src="https://user-images.githubusercontent.com/63836325/99795007-68d33080-2b6e-11eb-8248-5c46b1f750bf.PNG">
 </div>
-#★ 2020-11-18 ★ <br>
+##★ 2020-11-18 ★ <br>
 <br>
 실행시 인벤토리 슬롯 자동 생성<br>
 아이템 습득시 인벤토리에 저장<br>
@@ -23,7 +23,7 @@
 획득시 텍스트 발생<br>
 <br>
 <br>
-#★ 2020-11-20 ★ <br>
+##★ 2020-11-20 ★ <br>
 <br>
 Assets 폴더 안의 Resources 안에 Inventory 폴더 생성 및 관련 파일 정리<br>
 <br>
