@@ -6,9 +6,9 @@
 
 ## ex)
 <div>
-![캡처2](https://user-images.githubusercontent.com/63836325/99794986-64a71300-2b6e-11eb-983f-389ae739f546.PNG)
-![캡처3](https://user-images.githubusercontent.com/63836325/99794994-6670d680-2b6e-11eb-8016-8ea25f0724f3.PNG)
-![캡처4](https://user-images.githubusercontent.com/63836325/99795007-68d33080-2b6e-11eb-8248-5c46b1f750bf.PNG)
+<img width="270" src="https://user-images.githubusercontent.com/63836325/99794986-64a71300-2b6e-11eb-983f-389ae739f546.PNG">
+<img width="270" src="https://user-images.githubusercontent.com/63836325/99794994-6670d680-2b6e-11eb-8016-8ea25f0724f3.PNG">
+<img width="270" src="https://user-images.githubusercontent.com/63836325/99795007-68d33080-2b6e-11eb-8248-5c46b1f750bf.PNG">
 </div>
 ★ 2020-11-18 ★ <br>
 <br>
